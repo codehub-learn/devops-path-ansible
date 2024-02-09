@@ -65,7 +65,7 @@ E.g:
 ```
 make NUMBER=02
 ```
-This command will create two more containers, `debian-02` and `fedora-02Just copy the section between the `--CUT HERE--` lines and add it in your ~/.ssh/config file.
+This command will create two more containers, `debian-02` and `fedora-02`.
 
 If you want to stop TargetDockers run a `make clean` command.
 
