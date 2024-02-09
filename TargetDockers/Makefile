@@ -26,3 +26,4 @@ run_fedora: clean_debian build_debian
 clean_fedora:
 	-docker stop fedora-$(NUMBER)
 	-docker rm fedora-$(NUMBER)
+
