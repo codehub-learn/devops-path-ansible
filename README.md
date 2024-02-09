@@ -1,7 +1,9 @@
 ## Running Ansible
 
 Name: Examples from Codehub's Ansible Course
+
 Author: Kostas Makedos
+
 Email: kostas.makedos@gmail.com
 
 ### Introduction
