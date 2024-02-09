@@ -5,7 +5,7 @@
     - name: Install Apache
       package:
         name: apache2
-        state: latest
+        state: present
       become: true
 
     - name: Start Apache

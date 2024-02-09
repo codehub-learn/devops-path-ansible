@@ -1,7 +1,7 @@
 NUMBER?=01
 .ONESHELL:
 
-run: build run_debian run_fedora
+run: build run_debian run_fedora print_hosts
 
 clean: clean_debian clean_fedora
 
@@ -26,4 +26,14 @@ run_fedora: clean_debian build_debian
 clean_fedora:
 	-docker stop fedora-$(NUMBER)
 	-docker rm fedora-$(NUMBER)
+
+print_hosts:
+	@echo "---CUT HERE---"
+	@echo "Host debian-$(NUMBER)"
+	@echo "\tHostName localhost"
+	@echo "\tPort 1$(NUMBER)22"
+	@echo "Host fedora-$(NUMBER)"
+	@echo "\tHostName localhost"
+	@echo "\tPort 2$(NUMBER)22"
+	@echo "---CUT HERE---"
 
